@@ -9,4 +9,5 @@
   transform: translate(0%, -100%);
   pointer-events: none;
   will-change: left, top;
+  z-index: 10;
 }
