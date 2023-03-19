@@ -1,0 +1,48 @@
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url(/public/images/clock-face.png);
+  background-size: cover;
+  user-select: none;
+
+  &-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  &-hand {
+    pointer-events: none;
+    width: 100%;
+    transform: translate(0%, -50%);
+
+    &-block {
+      background: #181818;
+      transform-origin: 0 50%;
+    }
+    &-hour {
+      width: 20%;
+      height: 0.4rem;
+    }
+    &-minute {
+      width: 35%;
+      height: 0.3rem;
+    }
+
+    &-second {
+      width: 35%;
+      height: 0.1rem;
+    }
+  }
+
+  &-circle {
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #323236;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}

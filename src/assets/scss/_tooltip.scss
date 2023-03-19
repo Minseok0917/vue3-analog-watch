@@ -1,0 +1,12 @@
+.tooltip {
+  position: absolute;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.725rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  transform: translate(0%, -100%);
+  pointer-events: none;
+  will-change: left, top;
+}
